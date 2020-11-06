@@ -9,14 +9,17 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.lab1.R
 import kotlinx.android.synthetic.main.activity_main.*
 
-const val EXTRA_SUM = "com.example.lab1.SUM"
-const val SUM_KEY = "sum"
-const val REQUEST_CODE = 1
-
 class MainActivity : AppCompatActivity() {
     private var sum = 0
 
+    companion object {
+        const val EXTRA_SUM = "com.example.lab1.SUM"
+        const val SUM_KEY = "sum"
+        const val REQUEST_CODE = 1
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 

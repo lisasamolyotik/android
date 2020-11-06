@@ -7,4 +7,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="textStyle">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
 </resources>

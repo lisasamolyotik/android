@@ -15,7 +15,7 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var sum = intent.getIntExtra(EXTRA_SUM, 0)
+        var sum = intent.getIntExtra(MainActivity.EXTRA_SUM, 0)
 
         val editText = findViewById<EditText>(R.id.editText)
         val button = findViewById<Button>(R.id.okButton)
@@ -25,7 +25,7 @@ class SecondActivity : AppCompatActivity() {
             if (editText.text.isNotEmpty()) {
                 sum += editText.text.toString().toInt()
                 val intent = Intent(this, MainActivity::class.java).apply {
-                    putExtra(EXTRA_SUM, sum)
+                    putExtra(MainActivity.EXTRA_SUM, sum)
                 }
                 setResult(Activity.RESULT_OK, intent)
                 editText.text.clear()
