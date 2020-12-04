@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">baby shark</string>
+    <string name="start_menu_item">Play</string>
+    <string name="pause_menu_item">Pause</string>
+    <string name="stop_menu_item">Stop</string>
+    <string name="main_text">doo doo doo doo doo doo</string>
+</resources>
